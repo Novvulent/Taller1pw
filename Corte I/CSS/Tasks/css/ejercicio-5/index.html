@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 — Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Ejercicio 5 — Display</h1>
+
+    <h2>Elementos div</h2>
+
+    <div class="div-block">div con display: block</div>
+    <div class="div-inline-block">div con display: inline-block</div>
+    <div class="div-none">div con display: none (no se ve)</div>
+
+    <hr>
+
+    <h2>Elementos span</h2>
+
+    <span class="span-inline">span con display: inline</span>
+    <span class="span-block">span con display: block</span>
+    <span class="span-inline-block">span con display: inline-block</span>
+
+    <hr>
+
+    <section>
+        <h2>Diferencias observadas</h2>
+        <p>
+            El elemento con <code>display: block</code> ocupa todo
+            el ancho disponible y siempre empieza en una nueva línea,
+            como se ve en el primer <code>div</code>.
+        </p>
+        <p>
+            El elemento con <code>display: inline</code> no inicia
+            una nueva línea, se acomoda junto a otros elementos y no
+            respeta el ancho ni el alto asignados, como se ve en el
+            primer <code>span</code>.
+        </p>
+        <p>
+            El elemento con <code>display: inline-block</code> se
+            comporta como <code>inline</code> (no rompe la línea)
+            pero sí respeta el ancho, el alto y los márgenes, como
+            se observa en el segundo <code>div</code> y en el tercer
+            <code>span</code>.
+        </p>
+        <p>
+            El elemento con <code>display: none</code> desaparece
+            completamente de la página: no ocupa espacio ni es
+            visible, como sucede con el tercer <code>div</code>.
+        </p>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+.titulo {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.subtitulo {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+
+.parrafo {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}

@@ -1,0 +1,38 @@
+
+div, span {
+    padding: 10px;
+    margin: 5px;
+    background-color: #bbdefb;
+    border: 1px solid #1565c0;
+}
+
+
+.div-block {
+    display: block;
+    width: 250px;
+}
+
+.div-inline-block {
+    display: inline-block;
+    width: 250px;
+}
+
+.div-none {
+    display: none;
+}
+
+
+.span-inline {
+    display: inline;
+    width: 250px; 
+}
+
+.span-block {
+    display: block;
+    width: 250px;
+}
+
+.span-inline-block {
+    display: inline-block;
+    width: 250px;
+}
