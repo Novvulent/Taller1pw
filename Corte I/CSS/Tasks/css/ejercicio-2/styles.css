@@ -1,0 +1,29 @@
+
+body {
+    background-color: #f0f0f0;
+}
+
+
+.caja {
+    width: 200px;
+    height: 120px;
+    margin: 15px;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.caja-1 {
+    background-color: #e57373;
+}
+
+.caja-2 {
+    background-color: #64b5f6;
+}
+
+.caja-3 {
+    background-color: #81c784;
+}
