@@ -315,32 +315,36 @@
                 <h3>Ejercicio 6 — Flexbox</h3>
             </header>
 
-            <p>
-                Crear un menú de navegación utilizando Flexbox
-                para organizar sus elementos horizontalmente.
-            </p>
+            <style>
+                .ej6-menu ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2rem;
+                    background-color: #1e293b;
+                    padding: 1rem;
+                    margin: 0;
+                    border-radius: 6px;
+                }
+                .ej6-menu li a {
+                    color: #f4f4f4;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+                .ej6-menu li a:hover {
+                    text-decoration: underline;
+                }
+            </style>
 
-            <h4>Requisitos</h4>
-
-            <ul>
-                <li>Inicio</li>
-                <li>Nosotros</li>
-                <li>Servicios</li>
-                <li>Contacto</li>
-                <li>Utilizar <code>display: flex</code>.</li>
-                <li>Definir la distribución de los elementos.</li>
-                <li>Definir la alineación.</li>
-                <li>Establecer separación entre los elementos.</li>
-            </ul>
-
-            <h4>Conceptos</h4>
-
-            <ul>
-                <li><code>display: flex</code></li>
-                <li><code>justify-content</code></li>
-                <li><code>align-items</code></li>
-                <li><code>gap</code></li>
-            </ul>
+            <nav class="ej6-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
 
         </article>
 
@@ -351,26 +355,50 @@
                 <h3>Ejercicio 7 — Grid</h3>
             </header>
 
-            <p>
-                Crear una galería de productos utilizando
-                CSS Grid para distribuir los elementos.
-            </p>
+            <style>
+                .ej7-galeria {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1rem;
+                }
+                .ej7-galeria .producto {
+                    background-color: white;
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 1rem;
+                    text-align: center;
+                }
+                .ej7-galeria .imagen {
+                    font-size: 2rem;
+                }
+            </style>
 
-            <h4>Requisitos</h4>
-
-            <ul>
-                <li>Crear seis productos.</li>
-                <li>Organizar los productos en tres columnas.</li>
-                <li>Agregar separación entre los elementos.</li>
-            </ul>
-
-            <h4>Conceptos</h4>
-
-            <ul>
-                <li><code>display: grid</code></li>
-                <li><code>grid-template-columns</code></li>
-                <li><code>gap</code></li>
-            </ul>
+            <section class="ej7-galeria">
+                <article class="producto">
+                    <div class="imagen">📦</div>
+                    <p>Producto 1</p>
+                </article>
+                <article class="producto">
+                    <div class="imagen">🎧</div>
+                    <p>Producto 2</p>
+                </article>
+                <article class="producto">
+                    <div class="imagen">⌨️</div>
+                    <p>Producto 3</p>
+                </article>
+                <article class="producto">
+                    <div class="imagen">🖱️</div>
+                    <p>Producto 4</p>
+                </article>
+                <article class="producto">
+                    <div class="imagen">💻</div>
+                    <p>Producto 5</p>
+                </article>
+                <article class="producto">
+                    <div class="imagen">📱</div>
+                    <p>Producto 6</p>
+                </article>
+            </section>
 
         </article>
 
@@ -381,31 +409,44 @@
                 <h3>Ejercicio 8 — Responsive Design</h3>
             </header>
 
-            <p>
-                Adaptar una página web para que pueda visualizarse
-                correctamente en diferentes tamaños de pantalla.
-            </p>
+            <style>
+                .ej8-contenedor {
+                    width: 500px;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    background-color: white;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                }
+                .ej8-encabezado {
+                    background-color: #1e293b;
+                    color: white;
+                    padding: 1rem;
+                    text-align: center;
+                }
+                .ej8-area-contenido {
+                    padding: 1.5rem;
+                }
+                @media (max-width: 768px) {
+                    .ej8-contenedor {
+                        width: 100%;
+                    }
+                }
+            </style>
 
-            <h4>Requisitos</h4>
-
-            <ul>
-                <li>Crear un contenedor principal.</li>
-                <li>Crear un encabezado.</li>
-                <li>Crear un área de contenido.</li>
-                <li>Utilizar un ancho definido para escritorio.</li>
-                <li>
-                    Adaptar el ancho del contenido para dispositivos
-                    móviles.
-                </li>
-            </ul>
-
-            <h4>Conceptos</h4>
-
-            <ul>
-                <li>Media Queries.</li>
-                <li><code>@media (max-width: 768px)</code></li>
-                <li>Responsive Design.</li>
-            </ul>
+            <div class="ej8-contenedor">
+                <div class="ej8-encabezado">
+                    <p>Encabezado</p>
+                </div>
+                <div class="ej8-area-contenido">
+                    <p>
+                        Este contenedor tiene un ancho fijo en escritorio y
+                        se adapta al 100% del espacio disponible por debajo
+                        de 768px gracias a una media query.
+                    </p>
+                </div>
+            </div>
 
         </article>
 
@@ -416,39 +457,47 @@
                 <h3>Ejercicio 9 — Posicionamiento</h3>
             </header>
 
-            <p>
-                Crear una página que permita experimentar con
-                el posicionamiento de diferentes elementos utilizando CSS.
-            </p>
+            <style>
+                .ej9-contenedor {
+                    position: relative;
+                    height: 220px;
+                    background-color: #e2e8f0;
+                    border: 2px dashed #94a3b8;
+                    border-radius: 6px;
+                }
+                .ej9-caja {
+                    position: absolute;
+                    padding: 0.6rem 1rem;
+                    color: white;
+                    font-weight: bold;
+                    border-radius: 6px;
+                }
+                .ej9-relative {
+                    position: relative;
+                    top: 15px;
+                    left: 15px;
+                    background-color: #2563eb;
+                    display: inline-block;
+                }
+                .ej9-absolute {
+                    top: 15px;
+                    right: 15px;
+                    background-color: #16a34a;
+                }
+                .ej9-superpuesta {
+                    top: 70px;
+                    left: 40px;
+                    background-color: #f59e0b;
+                    z-index: 10;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+                }
+            </style>
 
-            <h4>Requisitos</h4>
-
-            <ul>
-                <li>Crear un contenedor principal.</li>
-                <li>Crear varios elementos dentro del contenedor.</li>
-                <li>
-                    Utilizar diferentes tipos de posicionamiento.
-                </li>
-                <li>
-                    Modificar la posición de los elementos utilizando
-                    las propiedades correspondientes.
-                </li>
-                <li>
-                    Hacer que uno de los elementos se superponga
-                    sobre otro.
-                </li>
-            </ul>
-
-            <h4>Conceptos</h4>
-
-            <ul>
-                <li><code>position</code></li>
-                <li><code>top</code></li>
-                <li><code>right</code></li>
-                <li><code>bottom</code></li>
-                <li><code>left</code></li>
-                <li><code>z-index</code></li>
-            </ul>
+            <div class="ej9-contenedor">
+                <div class="ej9-caja ej9-relative">relative</div>
+                <div class="ej9-caja ej9-absolute">absolute</div>
+                <div class="ej9-caja ej9-superpuesta">¡Encima!</div>
+            </div>
 
         </article>
 
@@ -459,39 +508,71 @@
                 <h3>Ejercicio 10 — Pseudoclases</h3>
             </header>
 
-            <p>
-                Crear una página con diferentes elementos interactivos
-                y aplicar estilos dependiendo del estado o posición
-                de cada elemento.
-            </p>
+            <style>
+                .ej10-menu ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 1rem;
+                    padding: 0;
+                }
+                .ej10-menu a {
+                    text-decoration: none;
+                    color: #1e293b;
+                    font-weight: bold;
+                }
+                .ej10-menu a:hover {
+                    text-decoration: underline;
+                }
+                .ej10-form input {
+                    border: 1px solid #cbd5e1;
+                    border-radius: 4px;
+                    padding: 0.4rem;
+                }
+                .ej10-form input:focus {
+                    border-color: #2563eb;
+                    outline: none;
+                }
+                .ej10-lista {
+                    list-style: none;
+                    padding: 0;
+                    max-width: 220px;
+                }
+                .ej10-lista li {
+                    padding: 0.4rem 0.8rem;
+                    background-color: #e2e8f0;
+                    margin-bottom: 4px;
+                    border-radius: 4px;
+                }
+                .ej10-lista li:first-child {
+                    background-color: #16a34a;
+                    color: white;
+                    font-weight: bold;
+                }
+                .ej10-lista li:nth-child(even) {
+                    background-color: #cbd5e1;
+                }
+            </style>
 
-            <h4>Requisitos</h4>
+            <nav class="ej10-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
 
-            <ul>
-                <li>Crear un menú con varios enlaces.</li>
-                <li>Crear un formulario con al menos dos campos.</li>
-                <li>Crear una lista con varios elementos.</li>
-                <li>
-                    Aplicar un estilo diferente cuando el usuario
-                    pase el cursor sobre un elemento.
-                </li>
-                <li>
-                    Aplicar un estilo diferente cuando un campo
-                    del formulario reciba el foco.
-                </li>
-                <li>
-                    Aplicar estilos diferentes a determinados
-                    elementos de la lista según su posición.
-                </li>
-            </ul>
+            <form class="ej10-form">
+                <label for="ej10-nombre">Nombre</label><br>
+                <input type="text" id="ej10-nombre" placeholder="Escribe tu nombre"><br><br>
+                <label for="ej10-correo">Correo</label><br>
+                <input type="email" id="ej10-correo" placeholder="Escribe tu correo">
+            </form>
 
-            <h4>Conceptos</h4>
-
-            <ul>
-                <li><code>:hover</code></li>
-                <li><code>:focus</code></li>
-                <li><code>:first-child</code></li>
-                <li><code>:nth-child()</code></li>
+            <ul class="ej10-lista">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
             </ul>
 
         </article>
