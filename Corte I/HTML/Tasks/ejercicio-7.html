@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7 — Formularios avanzados</title>
+</head>
+<body>
+
+    <article>
+        <header>
+            <h3>Ejercicio 7 — Formularios avanzados</h3>
+        </header>
+
+        <form action="#" method="post">
+
+            
+            <div>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <br>
+
+            
+            <div>
+                <label for="correo">Correo</label><br>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="edad">Edad</label><br>
+                <input type="number" id="edad" name="edad" min="0" max="120" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="carrera">Carrera</label><br>
+                <select id="carrera" name="carrera" required>
+                    <option value="">-- Seleccione una carrera --</option>
+                    <option value="sistemas">Ingeniería en Sistemas</option>
+                    <option value="industrial">Ingeniería Industrial</option>
+                    <option value="medicina">Medicina</option>
+                    <option value="derecho">Derecho</option>
+                    <option value="administracion">Administración de Empresas</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <p>Género</p>
+                <input type="radio" id="genero_masculino" name="genero" value="masculino">
+                <label for="genero_masculino">Masculino</label><br>
+
+                <input type="radio" id="genero_femenino" name="genero" value="femenino">
+                <label for="genero_femenino">Femenino</label><br>
+
+                <input type="radio" id="genero_otro" name="genero" value="otro">
+                <label for="genero_otro">Otro</label>
+            </div>
+            <br>
+
+            <div>
+                <p>Habilidades</p>
+                <input type="checkbox" id="habilidad_programacion" name="habilidades" value="programacion">
+                <label for="habilidad_programacion">Programación</label><br>
+
+                <input type="checkbox" id="habilidad_idiomas" name="habilidades" value="idiomas">
+                <label for="habilidad_idiomas">Idiomas</label><br>
+
+                <input type="checkbox" id="habilidad_liderazgo" name="habilidades" value="liderazgo">
+                <label for="habilidad_liderazgo">Liderazgo</label><br>
+
+                <input type="checkbox" id="habilidad_trabajo_equipo" name="habilidades" value="trabajo_equipo">
+                <label for="habilidad_trabajo_equipo">Trabajo en equipo</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="foto">Foto</label><br>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+            <br>
+
+            
+            <div>
+                <label for="comentarios">Comentarios</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea>
+            </div>
+            <br>
+
+            
+            <button type="submit">Enviar</button>
+
+        </form>
+    </article>
+
+</body>
+</html>
